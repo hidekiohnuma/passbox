@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountRegistrationView" customModule="passbox_ios">
+            <connections>
+                <outlet property="textField1" destination="INC-l6-6TR" id="fmp-t8-Rew"/>
+                <outlet property="textField2" destination="xEa-5E-axT" id="UPo-x1-IVk"/>
+                <outlet property="textField3" destination="gg8-6J-M7O" id="uZk-pw-m0d"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jPu-9n-vgG">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daz-Gd-CMB">
+                    <rect key="frame" x="40" y="485" width="305" height="64"/>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.80392156859999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="305" id="O0D-9c-eO7"/>
+                        <constraint firstAttribute="height" constant="64" id="qeu-YM-c5c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="送信"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="sendButton:" destination="-1" eventType="touchUpInside" id="zeJ-gp-wWf"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHd-Vr-sfw" userLabel="View1">
+                    <rect key="frame" x="0.0" y="81" width="600" height="39"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="銀行名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="INC-l6-6TR" userLabel="textField1">
+                            <rect key="frame" x="116" y="11" width="88" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="LY7-27-Hqw"/>
+                                <constraint firstAttribute="width" constant="88" id="UVS-wM-I1w"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="ARb-Zu-JFW"/>
+                        <constraint firstItem="INC-l6-6TR" firstAttribute="centerX" secondItem="GHd-Vr-sfw" secondAttribute="centerX" constant="-140" id="B5s-5z-lTq"/>
+                        <constraint firstAttribute="width" constant="600" id="UlK-RI-JxP"/>
+                        <constraint firstItem="INC-l6-6TR" firstAttribute="centerY" secondItem="GHd-Vr-sfw" secondAttribute="centerY" id="VIs-fD-n28"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGJ-lo-jKl" userLabel="View2">
+                    <rect key="frame" x="0.0" y="126" width="600" height="39"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="支店番号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xEa-5E-axT" userLabel="textField2">
+                            <rect key="frame" x="116" y="11" width="88" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="lqc-R0-KNU"/>
+                                <constraint firstAttribute="width" constant="88" id="xl5-VU-TNX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="600" id="gbi-Yp-b1z"/>
+                        <constraint firstItem="xEa-5E-axT" firstAttribute="centerY" secondItem="XGJ-lo-jKl" secondAttribute="centerY" id="jOT-dB-ALh"/>
+                        <constraint firstAttribute="height" constant="39" id="xaE-dE-fbc"/>
+                        <constraint firstItem="xEa-5E-axT" firstAttribute="centerX" secondItem="XGJ-lo-jKl" secondAttribute="centerX" constant="-140" id="zlR-KQ-dbQ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqJ-n3-XGc" userLabel="View3">
+                    <rect key="frame" x="0.0" y="173" width="600" height="39"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="口座番号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gg8-6J-M7O" userLabel="textField3">
+                            <rect key="frame" x="116" y="11" width="88" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="6FK-aH-17g"/>
+                                <constraint firstAttribute="width" constant="88" id="k2a-Zj-IJX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="gg8-6J-M7O" firstAttribute="centerY" secondItem="rqJ-n3-XGc" secondAttribute="centerY" id="H4N-Et-HfO"/>
+                        <constraint firstAttribute="height" constant="39" id="LQB-EV-zkE"/>
+                        <constraint firstItem="gg8-6J-M7O" firstAttribute="centerX" secondItem="rqJ-n3-XGc" secondAttribute="centerX" constant="-140" id="Tyr-aQ-A2h"/>
+                        <constraint firstAttribute="width" constant="600" id="sE1-CF-lah"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="rqJ-n3-XGc" firstAttribute="centerX" secondItem="jPu-9n-vgG" secondAttribute="centerX" id="0HQ-bE-tP3"/>
+                <constraint firstItem="daz-Gd-CMB" firstAttribute="centerY" secondItem="jPu-9n-vgG" secondAttribute="centerY" constant="217" id="9TI-cw-IWE"/>
+                <constraint firstItem="XGJ-lo-jKl" firstAttribute="centerY" secondItem="jPu-9n-vgG" secondAttribute="top" constant="145" id="MO6-yv-ZlS"/>
+                <constraint firstItem="XGJ-lo-jKl" firstAttribute="centerX" secondItem="jPu-9n-vgG" secondAttribute="centerX" id="btL-R7-tJT"/>
+                <constraint firstItem="rqJ-n3-XGc" firstAttribute="centerY" secondItem="jPu-9n-vgG" secondAttribute="top" constant="192" id="dim-6e-yX5"/>
+                <constraint firstItem="daz-Gd-CMB" firstAttribute="leading" secondItem="jPu-9n-vgG" secondAttribute="leading" constant="40" id="e3T-AZ-nSM"/>
+                <constraint firstItem="GHd-Vr-sfw" firstAttribute="centerX" secondItem="jPu-9n-vgG" secondAttribute="centerX" id="hwd-8m-S3d"/>
+                <constraint firstItem="GHd-Vr-sfw" firstAttribute="centerY" secondItem="jPu-9n-vgG" secondAttribute="top" constant="100" id="rc3-5F-LLo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

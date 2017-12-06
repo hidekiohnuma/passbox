@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelfIntroductionView" customModule="passbox_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="selfIntroductionText" destination="rwl-80-tBE" id="XXs-AE-8Ad"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OhF-Ce-SN1">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ti1-BR-MM7">
+                    <rect key="frame" x="48" y="485" width="305" height="64"/>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.80392156859999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="oCz-hb-YIU"/>
+                        <constraint firstAttribute="width" constant="305" id="oDo-fB-o0Q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="送信"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="sendButton:" destination="-1" eventType="touchUpInside" id="j4t-is-cRC"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提案企業にアピールできるよう" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3we-Qf-7Ys">
+                    <rect key="frame" x="18" y="72" width="364" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="86x-gW-4FV"/>
+                        <constraint firstAttribute="width" constant="364" id="aTX-Dy-Z85"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.67450980390000004" green="0.87843137250000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自己紹介文を作成しましょう" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3b-iz-udC">
+                    <rect key="frame" x="18" y="92" width="364" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="364" id="4so-iP-YP0"/>
+                        <constraint firstAttribute="height" constant="17" id="KP8-Df-CgW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.67450980390000004" green="0.87843137250000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2x-U3-p3t" userLabel="View1">
+                    <rect key="frame" x="0.0" y="140" width="600" height="321"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="例：はじめまして。山田物流株式会社の山田たかしです。現在、東京都にて20年物流会社をやっております。トラック20所有しています。" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rwl-80-tBE" userLabel="textField1">
+                            <rect key="frame" x="15" y="4" width="291" height="313"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="313" id="PyF-gl-OEk"/>
+                                <constraint firstAttribute="width" constant="291" id="S7g-0E-sDz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="rwl-80-tBE" firstAttribute="centerX" secondItem="W2x-U3-p3t" secondAttribute="centerX" constant="-140" id="HiF-lk-9kK"/>
+                        <constraint firstAttribute="width" constant="600" id="IxY-PG-lP6"/>
+                        <constraint firstAttribute="height" constant="321" id="L15-8D-wll"/>
+                        <constraint firstItem="rwl-80-tBE" firstAttribute="centerY" secondItem="W2x-U3-p3t" secondAttribute="centerY" id="Nhf-z8-uFE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="3we-Qf-7Ys" firstAttribute="centerY" secondItem="OhF-Ce-SN1" secondAttribute="top" constant="80" id="C77-o6-4kt"/>
+                <constraint firstItem="ti1-BR-MM7" firstAttribute="centerX" secondItem="3we-Qf-7Ys" secondAttribute="centerX" id="I5R-MO-4En"/>
+                <constraint firstItem="W2x-U3-p3t" firstAttribute="centerY" secondItem="OhF-Ce-SN1" secondAttribute="centerY" id="KMK-8W-Sjs"/>
+                <constraint firstItem="X3b-iz-udC" firstAttribute="centerX" secondItem="OhF-Ce-SN1" secondAttribute="centerX" constant="-100" id="LT3-5g-30s"/>
+                <constraint firstItem="ti1-BR-MM7" firstAttribute="centerY" secondItem="OhF-Ce-SN1" secondAttribute="centerY" constant="217" id="UAR-5e-TPQ"/>
+                <constraint firstItem="3we-Qf-7Ys" firstAttribute="centerX" secondItem="OhF-Ce-SN1" secondAttribute="centerX" constant="-100" id="ijH-WD-NPx"/>
+                <constraint firstItem="X3b-iz-udC" firstAttribute="centerY" secondItem="OhF-Ce-SN1" secondAttribute="top" constant="100" id="pjP-EM-ECd"/>
+                <constraint firstItem="W2x-U3-p3t" firstAttribute="centerX" secondItem="OhF-Ce-SN1" secondAttribute="centerX" id="ycw-no-9pN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

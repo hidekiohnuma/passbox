@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchView" customModule="passbox_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="textField1" destination="d6v-8C-1SJ" id="ThF-Pq-q08"/>
+                <outlet property="textField2" destination="6FI-l9-2S5" id="adI-Jk-dVm"/>
+                <outlet property="textField3" destination="qfZ-UE-xac" id="Ngz-xA-D4H"/>
+                <outlet property="textField4" destination="jxK-Dh-Jlq" id="q4a-zL-KBf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="エリア" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWV-cw-k2r">
+                    <rect key="frame" x="25" y="90" width="51" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Crm-md-Au6"/>
+                        <constraint firstAttribute="width" constant="51" id="jGO-nE-BBY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="荷物" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uG-cH-UUs">
+                    <rect key="frame" x="25" y="202" width="34" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="DbN-pD-jOe"/>
+                        <constraint firstAttribute="width" constant="34" id="Nbs-OD-NVg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="車種" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uie-ow-A4J">
+                    <rect key="frame" x="25" y="290" width="34" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="5Fp-2t-tSY"/>
+                        <constraint firstAttribute="height" constant="21" id="Jsb-VU-WeD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0i-tw-2PR">
+                    <rect key="frame" x="48" y="432" width="305" height="64"/>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.80392156859999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="qOv-FY-LQW"/>
+                        <constraint firstAttribute="width" constant="305" id="uwS-Nb-Udg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="検索"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="searchButton:" destination="-1" eventType="touchUpInside" id="uhf-Vo-wwM"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="skT-AR-Lxb" userLabel="View1">
+                    <rect key="frame" x="0.0" y="111" width="600" height="33"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="posiLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="BT2-Ed-AgH">
+                            <rect key="frame" x="64" y="0.0" width="27" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="GCu-uR-vgg"/>
+                                <constraint firstAttribute="width" constant="27" id="o6t-pT-j4h"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="積み込みエリア(都道府県)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d6v-8C-1SJ" userLabel="textField1">
+                            <rect key="frame" x="116" y="-1" width="389" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="9Km-wm-9rw"/>
+                                <constraint firstAttribute="width" constant="389" id="zO4-Ij-Hgd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="BT2-Ed-AgH" firstAttribute="centerY" secondItem="skT-AR-Lxb" secondAttribute="centerY" id="0JH-rh-ndg"/>
+                        <constraint firstItem="BT2-Ed-AgH" firstAttribute="centerX" secondItem="skT-AR-Lxb" secondAttribute="leading" constant="77" id="Va3-Ua-QIH"/>
+                        <constraint firstItem="d6v-8C-1SJ" firstAttribute="centerY" secondItem="skT-AR-Lxb" secondAttribute="centerY" id="XBn-Em-J5K"/>
+                        <constraint firstAttribute="width" constant="600" id="jvl-bt-1bM"/>
+                        <constraint firstItem="d6v-8C-1SJ" firstAttribute="centerX" secondItem="skT-AR-Lxb" secondAttribute="centerX" constant="10" id="uOc-Wj-mho"/>
+                        <constraint firstAttribute="height" constant="33" id="wgH-kN-zac"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCF-sT-G14" userLabel="View2">
+                    <rect key="frame" x="0.0" y="146" width="600" height="33"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="posiLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="C2h-rt-rhC">
+                            <rect key="frame" x="64" y="0.0" width="27" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="27" id="C9N-VD-8cJ"/>
+                                <constraint firstAttribute="height" constant="33" id="Yay-Fx-fKa"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="積み下ろしエリア(都道府県)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6FI-l9-2S5" userLabel="textField2">
+                            <rect key="frame" x="116" y="-1" width="389" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="UPT-LW-Drh"/>
+                                <constraint firstAttribute="width" constant="389" id="ZJc-mN-AIe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="C2h-rt-rhC" firstAttribute="centerX" secondItem="hCF-sT-G14" secondAttribute="leading" constant="77" id="3pL-XF-aEa"/>
+                        <constraint firstItem="C2h-rt-rhC" firstAttribute="centerY" secondItem="hCF-sT-G14" secondAttribute="centerY" id="DRE-5j-1sh"/>
+                        <constraint firstAttribute="height" constant="33" id="Ica-DA-TET"/>
+                        <constraint firstItem="6FI-l9-2S5" firstAttribute="centerY" secondItem="hCF-sT-G14" secondAttribute="centerY" id="KUq-8d-A1A"/>
+                        <constraint firstAttribute="width" constant="600" id="M8W-Hj-ojA"/>
+                        <constraint firstItem="6FI-l9-2S5" firstAttribute="centerX" secondItem="hCF-sT-G14" secondAttribute="centerX" constant="10" id="mKV-ek-thZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiw-EF-3GG" userLabel="View3">
+                    <rect key="frame" x="0.0" y="231" width="600" height="33"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baggageLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="hRc-aF-Z8Y">
+                            <rect key="frame" x="63" y="0.0" width="28" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="gvL-ev-AbU"/>
+                                <constraint firstAttribute="height" constant="33" id="nZp-fo-P1Z"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="荷物の種類を選択" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qfZ-UE-xac" userLabel="textField3">
+                            <rect key="frame" x="116" y="-1" width="389" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Q33-IE-7Tf"/>
+                                <constraint firstAttribute="width" constant="389" id="sMZ-uO-2rE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="hRc-aF-Z8Y" firstAttribute="centerY" secondItem="fiw-EF-3GG" secondAttribute="centerY" id="59c-BV-Nsj"/>
+                        <constraint firstAttribute="height" constant="33" id="K2P-sQ-iEh"/>
+                        <constraint firstAttribute="width" constant="600" id="MBF-k9-TYk"/>
+                        <constraint firstItem="qfZ-UE-xac" firstAttribute="centerX" secondItem="fiw-EF-3GG" secondAttribute="centerX" constant="10" id="QfX-Zh-VEP"/>
+                        <constraint firstItem="qfZ-UE-xac" firstAttribute="centerY" secondItem="fiw-EF-3GG" secondAttribute="centerY" id="dnb-je-Exg"/>
+                        <constraint firstItem="hRc-aF-Z8Y" firstAttribute="centerX" secondItem="fiw-EF-3GG" secondAttribute="leading" constant="77" id="yON-53-xf7"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tiK-B6-MMG" userLabel="View4">
+                    <rect key="frame" x="0.0" y="314" width="600" height="33"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trackLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="RZ9-qC-ZXj">
+                            <rect key="frame" x="60" y="0.0" width="35" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="CqY-t1-lSM"/>
+                                <constraint firstAttribute="height" constant="33" id="OQN-H5-on7"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="車種を選択" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jxK-Dh-Jlq" userLabel="textField4">
+                            <rect key="frame" x="116" y="-1" width="389" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="5a9-2N-Qig"/>
+                                <constraint firstAttribute="width" constant="389" id="5gr-bX-XpT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="jxK-Dh-Jlq" firstAttribute="centerY" secondItem="tiK-B6-MMG" secondAttribute="centerY" id="1QP-B3-ATo"/>
+                        <constraint firstItem="jxK-Dh-Jlq" firstAttribute="centerX" secondItem="tiK-B6-MMG" secondAttribute="centerX" constant="10" id="4NO-Oh-6Ez"/>
+                        <constraint firstItem="RZ9-qC-ZXj" firstAttribute="centerY" secondItem="tiK-B6-MMG" secondAttribute="centerY" id="Acf-S0-EAv"/>
+                        <constraint firstAttribute="height" constant="33" id="ejQ-lW-oOx"/>
+                        <constraint firstItem="RZ9-qC-ZXj" firstAttribute="centerX" secondItem="tiK-B6-MMG" secondAttribute="leading" constant="77" id="q16-yR-2kG"/>
+                        <constraint firstAttribute="width" constant="600" id="rSh-Px-4vf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="hCF-sT-G14" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1nv-Du-IWh"/>
+                <constraint firstItem="skT-AR-Lxb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="top" constant="127" id="2lT-Xb-H0B"/>
+                <constraint firstItem="fiw-EF-3GG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-53" id="6T4-zo-hEH"/>
+                <constraint firstItem="tiK-B6-MMG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="30" id="B0k-Gh-ge7"/>
+                <constraint firstItem="w0i-tw-2PR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-100" id="E2P-i0-nMK"/>
+                <constraint firstAttribute="bottom" secondItem="w0i-tw-2PR" secondAttribute="bottom" constant="104" id="GdN-Sm-zMZ"/>
+                <constraint firstItem="tiK-B6-MMG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Jmv-wA-YhN"/>
+                <constraint firstItem="2uG-cH-UUs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-87" id="Oei-9Z-nyB"/>
+                <constraint firstItem="pWV-cw-k2r" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="Qqg-dg-jmP"/>
+                <constraint firstItem="2uG-cH-UUs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="leading" constant="42" id="SSs-VZ-DKi"/>
+                <constraint firstItem="uie-ow-A4J" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TJx-kO-OGZ"/>
+                <constraint firstItem="skT-AR-Lxb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YEd-6q-96E"/>
+                <constraint firstItem="uie-ow-A4J" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="leading" constant="42" id="hc4-zf-P6d"/>
+                <constraint firstItem="pWV-cw-k2r" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="mOy-3W-YNr"/>
+                <constraint firstItem="fiw-EF-3GG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pQv-Sl-Elb"/>
+                <constraint firstItem="hCF-sT-G14" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="top" constant="162" id="uLZ-rb-xe6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="baggageLogo.png" width="36" height="38"/>
+        <image name="posiLogo.png" width="25" height="31"/>
+        <image name="trackLogo.png" width="160" height="117"/>
+    </resources>
+</document>
